@@ -85,6 +85,7 @@
 .possibilities__item-block h3 {
   font-size: 4.5rem;
   font-weight: 800;
+  transition: color 1s ease;
 }
 
 .possibilities__grid .div1 {
