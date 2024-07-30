@@ -6,6 +6,7 @@
   border-radius: 16px;
   cursor: pointer;
   transition-duration: 300ms;
+  width: 300px;
   font-size: 1.5rem;
   z-index: 9999;
 
