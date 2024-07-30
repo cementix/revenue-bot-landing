@@ -338,52 +338,53 @@
                 FAQ
             </h2>
             <div class="faq__main">
-                <div class="faq__main-item">
-                    <p>
-                      1. What is RevenueBot? 
-                    </p>
-                    <!-- <p>
-                      RevenueBot is a tool for automating trading on cryptocurrency exchanges. It allows users to create and configure trading bots to execute complex strategies.
-                    </p> -->
-                    <img src="./assets/faq__arrow-down.svg" />
-                </div>
-                <div class="faq__main-item">
-                    <p>
-                      2. How to start using RevenueBot? 
-                    </p>
-                    <!-- <p>
-                      To start using RevenueBot, you need to register on the site, connect your exchange account, and configure your first bot.
-                    </p> -->
-                    <img src="./assets/faq__arrow-down.svg" />
-                </div>
-                <div class="faq__main-item">
-                    <p>
-                      3. How safe is it to use RevenueBot? 
-                    </p>
-                    <!-- <p>
-                      RevenueBot uses API keys to connect to your exchange account. These keys do not provide access to your funds for withdrawal, which provides an additional level of security.
-                    </p> -->
-                    <img src="./assets/faq__arrow-down.svg" />
-                </div>
-                <div class="faq__main-item">
-                    <p>
-                      4. Which exchanges does RevenueBot support? 
-                    </p>
-                    <!-- <p>
-                      RevenueBot supports many popular cryptocurrency exchanges, including Binance, ByBit, OKX, HTX, Kraken and others.
-                    </p> -->
-                    <img src="./assets/faq__arrow-down.svg" />
-                </div>
-                <div class="faq__main-item">
-                    <p>
-                      5. How much does it cost to use RevenueBot?  
-                    </p>
-                    <!-- <p>
-                      We take a 20% commission only from the income you receive when trading with the bot, but not more than 50 USD per calendar month for each type of trading (Currently, 3 types of trading are presented: SPOT, Futures USDS-M, Futures Coin-M). The reporting period is from the first to the last day of the month.
-                    </p> -->
-                    <img src="./assets/faq__arrow-down.svg" />
-                </div>
-            </div>
+              <ul class="accordion">
+                <li class="accordion-item faq__main-item" onclick="openAccordion(0)">
+                  <div class="accordion-title" id="heading2" tabindex="0" role="button" aria-expanded="false" aria-controls="content2">
+                    <span>1. What is RevenueBot? </span>
+                  </div>
+                  <div class="accordion-content text" id="content2" role="region" aria-labelledby="heading2">
+                    <p>RevenueBot is a tool for automating trading on cryptocurrency exchanges. It allows users to create and configure trading bots to execute complex strategies.</p>
+                  </div>
+                </li>
+
+                <li class="accordion-item faq__main-item" onclick="openAccordion(1)">
+                  <div class="accordion-title" id="heading2" tabindex="0" role="button" aria-expanded="false" aria-controls="content2">
+                    <span>2. How do I start using RevenueBot?</span>
+                  </div>
+                  <div class="accordion-content text" id="content2" role="region" aria-labelledby="heading2">
+                    <p>To start using RevenueBot, you need to register on the site, connect your exchange account, and set up your first bot.</p>
+                  </div>
+                </li>
+                
+                <li class="accordion-item faq__main-item" onclick="openAccordion(2)">
+                  <div class="accordion-title" id="heading2" tabindex="0" role="button" aria-expanded="false" aria-controls="content2">
+                    <span>3. How secure is it to use RevenueBot?</span>
+                  </div>
+                  <div class="accordion-content text" id="content2" role="region" aria-labelledby="heading2">
+                    <p>RevenueBot uses API keys to connect to your exchange account. These keys do not give access to your funds for withdrawal, ensuring an additional level of security.</p>
+                  </div>
+                </li>
+                
+                <li class="accordion-item faq__main-item" onclick="openAccordion(3)">
+                  <div class="accordion-title" id="heading2" tabindex="0" role="button" aria-expanded="false" aria-controls="content2">
+                    <span>4. Which exchanges are supported by RevenueBot?</span>
+                  </div>
+                  <div class="accordion-content text" id="content2" role="region" aria-labelledby="heading2">
+                    <p>RevenueBot supports many popular cryptocurrency exchanges, including Binance, ByBit, OKX, HTX, Kraken, and others.</p>
+                  </div>
+                </li>
+                
+                <li class="accordion-item faq__main-item" onclick="openAccordion(4)">
+                  <div class="accordion-title" id="heading2" tabindex="0" role="button" aria-expanded="false" aria-controls="content2">
+                    <span>5. How much does using RevenueBot cost?</span>
+                  </div>
+                  <div class="accordion-content text" id="content2" role="region" aria-labelledby="heading2">
+                    <p>We take a commission of 20% only from the income you receive when trading with the bot, but no more than $50 per calendar month for each type of trading (Currently, there are 3 types of trading presented: SPOT, Futures USDS-M, Futures Coin-M). The reporting period is from the first to the last day of the month.</p>
+                  </div>
+                </li>
+              </ul>
+          </div>
         </div>
       </section>
       <section class="contact">
@@ -412,5 +413,6 @@
     </main>
 
     <script src="scripts/animations.js"></script>
+    <script src="scripts/accordion.js"></script>
   </body>
 </html>

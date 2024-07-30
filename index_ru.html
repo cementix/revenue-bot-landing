@@ -338,51 +338,52 @@
                 FAQ
             </h2>
             <div class="faq__main">
-                <div class="faq__main-item">
-                    <p>
-                      1. Что такое RevenueBot? 
-                    </p>
-                    <!-- <p>
-                      RevenueBot - это инструмент для автоматизации торговли на криптовалютных биржах. Он позволяет пользователям создавать и настраивать торговые боты для выполнения сложных стратегий.
-                    </p> -->
-                    <img src="./assets/faq__arrow-down.svg" />
-                </div>
-                <div class="faq__main-item">
-                    <p>
-                      2. Как начать использовать RevenueBot? 
-                    </p>
-                    <!-- <p>
-                      Для начала использования RevenueBot вам нужно зарегистрироваться на сайте, подключить свой аккаунт на бирже и настроить своего первого бота.
-                    </p> -->
-                    <img src="./assets/faq__arrow-down.svg" />
-                </div>
-                <div class="faq__main-item">
-                    <p>
-                      3. Насколько безопасно использовать RevenueBot? 
-                    </p>
-                    <!-- <p>
-                      RevenueBot использует API-ключи для подключения к вашему аккаунту на бирже. Эти ключи не дают доступ к вашим средствам для вывода, что обеспечивает дополнительный уровень безопасности.
-                    </p> -->
-                    <img src="./assets/faq__arrow-down.svg" />
-                </div>
-                <div class="faq__main-item">
-                    <p>
-                      4. Какие биржи поддерживаются RevenueBot? 
-                    </p>
-                    <!-- <p>
-                      RevenueBot поддерживает множество популярных криптовалютных бирж, включая Binance, ByBit, OKX, HTX, Kraken и другие.
-                    </p> -->
-                    <img src="./assets/faq__arrow-down.svg" />
-                </div>
-                <div class="faq__main-item">
-                    <p>
-                      5. Сколько стоит использование RevenueBot?  
-                    </p>
-                    <!-- <p>
-                      Мы берем комиссию 20% только с дохода, который вы получаете при торговле ботом, но не больше чем 50 USD за календарный месяц за каждый вид торговли (На текущий момент представлено 3 вида торговли: SPOT, Futures USDS-M, Futures Coin-M). Отчетным является период с первого до последнего числа месяца.
-                    </p> -->
-                    <img src="./assets/faq__arrow-down.svg" />
-                </div>
+                <ul class="accordion">
+                  <li class="accordion-item faq__main-item" onclick="openAccordion(0)">
+                    <div class="accordion-title" id="heading2" tabindex="0" role="button" aria-expanded="false" aria-controls="content2">
+                      <span>1. Что такое RevenueBot? </span>
+                    </div>
+                    <div class="accordion-content text" id="content2" role="region" aria-labelledby="heading2">
+                      <p>RevenueBot - это инструмент для автоматизации торговли на криптовалютных биржах. Он позволяет пользователям создавать и настраивать торговые боты для выполнения сложных стратегий.</p>
+                    </div>
+                  </li>
+
+                  <li class="accordion-item faq__main-item" onclick="openAccordion(1)">
+                    <div class="accordion-title" id="heading2" tabindex="0" role="button" aria-expanded="false" aria-controls="content2">
+                      <span>2. Как начать использовать RevenueBot?</span>
+                    </div>
+                    <div class="accordion-content text" id="content2" role="region" aria-labelledby="heading2">
+                      <p>Для начала использования RevenueBot вам нужно зарегистрироваться на сайте, подключить свой аккаунт на бирже и настроить своего первого бота.</p>
+                    </div>
+                  </li>
+                  
+                  <li class="accordion-item faq__main-item" onclick="openAccordion(2)">
+                    <div class="accordion-title" id="heading2" tabindex="0" role="button" aria-expanded="false" aria-controls="content2">
+                      <span>3. Насколько безопасно использовать RevenueBot?</span>
+                    </div>
+                    <div class="accordion-content text" id="content2" role="region" aria-labelledby="heading2">
+                      <p>RevenueBot использует API-ключи для подключения к вашему аккаунту на бирже. Эти ключи не дают доступ к вашим средствам для вывода, что обеспечивает дополнительный уровень безопасности.</p>
+                    </div>
+                  </li>
+                  
+                  <li class="accordion-item faq__main-item" onclick="openAccordion(3)">
+                    <div class="accordion-title" id="heading2" tabindex="0" role="button" aria-expanded="false" aria-controls="content2">
+                      <span>4. Какие биржи поддерживаются RevenueBot?</span>
+                    </div>
+                    <div class="accordion-content text" id="content2" role="region" aria-labelledby="heading2">
+                      <p>RevenueBot поддерживает множество популярных криптовалютных бирж, включая Binance, ByBit, OKX, HTX, Kraken и другие.</p>
+                    </div>
+                  </li>
+                  
+                  <li class="accordion-item faq__main-item" onclick="openAccordion(4)">
+                    <div class="accordion-title" id="heading2" tabindex="0" role="button" aria-expanded="false" aria-controls="content2">
+                      <span>5. Сколько стоит использование RevenueBot?</span>
+                    </div>
+                    <div class="accordion-content text" id="content2" role="region" aria-labelledby="heading2">
+                      <p> Мы берем комиссию 20% только с дохода, который вы получаете при торговле ботом, но не больше чем 50 USD за календарный месяц за каждый вид торговли (На текущий момент представлено 3 вида торговли: SPOT, Futures USDS-M, Futures Coin-M). Отчетным является период с первого до последнего числа месяца.</p>
+                    </div>
+                  </li>
+                </ul>
             </div>
         </div>
       </section>
@@ -413,5 +414,6 @@
 
 
     <script src="scripts/animations.js"></script>
+    <script src="scripts/accordion.js"></script>
   </body>
 </html>
