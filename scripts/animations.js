@@ -57,3 +57,26 @@ document.addEventListener("DOMContentLoaded", () => {
     container.appendChild(clone);
   }
 });
+
+// Animate possibilities
+
+function cycleColors() {
+  const items = document.querySelectorAll(".possibilities__grid-item h3");
+  let currentIndex = 0;
+
+  function next() {
+    items.forEach((item, index) => {
+      if (index === currentIndex) {
+        item.style.color = "#363CB0";
+      } else {
+        item.style.color = "";
+      }
+    });
+
+    currentIndex = (currentIndex + 1) % items.length;
+  }
+
+  setInterval(next, 1000);
+}
+
+document.addEventListener("DOMContentLoaded", cycleColors);
