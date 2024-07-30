@@ -6,7 +6,6 @@
   align-items: start;
   justify-content: center;
   gap: 120px;
-
   background: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,7 +17,6 @@
   margin: 0px auto;
   white-space: nowrap;
   z-index: 2;
-
   font-family: "Proxima Nova", sans-serif !important;
   font-optical-sizing: auto !important;
   font-weight: 800 !important;
@@ -34,13 +32,13 @@
 .advantages__row {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   gap: 16px;
-  height: 100%;
   width: 100%;
   justify-content: center;
   margin: 0 2px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .advantages__wrapper {
@@ -55,6 +53,7 @@
   background-color: #363cb8;
   color: #ffffff;
 }
+
 .advantages__row-item img {
   height: 50px;
   width: 50px;
@@ -68,21 +67,38 @@
   flex-direction: column;
   padding: 8px;
   gap: 16px;
-  min-height: 226px;
-  max-height: 226px;
-  overflow: auto;
+  height: 226px;
+  overflow: hidden;
   width: 100%;
   max-width: 256px;
   border-radius: 16px;
   font-size: 1rem;
-
   font-family: "Montserrat", sans-serif !important;
   font-optical-sizing: auto !important;
   font-weight: 400 !important;
   font-style: normal !important;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  position: relative;
 }
-.advantages__row-button {
-  margin-top: auto;
+
+.advantages__row-item:hover {
+  transform: translateY(-15%);
+  height: 270px;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.advantages__row-item:hover .advantages__row-button {
+  display: block;
+  margin-top: 30px;
+  transition: all 0.5s ease;
+  scale: 0.9;
+}
+
+.advantages__row-item:hover img {
+  scale: 1.2;
+  margin-left: 10px;
+  transition: all 1s ease;
 }
 
 @media (max-width: 1024px) {
