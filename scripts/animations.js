@@ -80,3 +80,20 @@ function cycleColors() {
 }
 
 document.addEventListener("DOMContentLoaded", cycleColors);
+
+// Animate consultation
+
+document.addEventListener("DOMContentLoaded", function () {
+  const image = document.querySelector(".consultation-image");
+  const viewportHeight = window.innerHeight;
+
+  const handleScroll = () => {
+    const imageTop = image.getBoundingClientRect().top;
+    if (imageTop < viewportHeight) {
+      image.classList.add("animate");
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll();
+});

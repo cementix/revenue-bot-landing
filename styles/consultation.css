@@ -8,9 +8,17 @@
   justify-content: center;
   gap: 10%;
 }
+
 .consultation-image {
   z-index: 1;
+  opacity: 0;
 }
+
+.consultation-image.animate {
+  animation: fadeIn 1s ease;
+  animation-fill-mode: forwards;
+}
+
 .consultation__image-bg {
   position: absolute;
   top: -20%;
@@ -91,5 +99,16 @@
 @media (max-width: 1024px) {
   .consultation {
     flex-wrap: wrap;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
   }
 }
