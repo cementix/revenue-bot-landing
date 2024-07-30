@@ -1,23 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const gridItems = document.querySelectorAll(".grid-item");
-  const image = document.querySelector(".launch__wrapper-image");
+  const bonusItems = document.querySelectorAll(".bonus__row-item");
 
   function handleScroll() {
-    gridItems.forEach((element) => {
+    bonusItems.forEach((element, index) => {
       const elementTop = element.getBoundingClientRect().top;
       const viewportHeight = window.innerHeight;
 
       if (elementTop < viewportHeight) {
         element.classList.add("animate");
+        element.classList.add(`div${index}`);
       }
     });
-
-    if (image) {
-      const imageTop = image.getBoundingClientRect().top;
-      if (imageTop < window.innerHeight) {
-        image.classList.add("animate");
-      }
-    }
   }
 
   window.addEventListener("scroll", handleScroll);
