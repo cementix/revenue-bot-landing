@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- META TAGS START -->
+    <meta charset="utf-8">
+    <title>RevenueBOT – это умный автоматический бот для торговли на крупных криптовалютных биржах, таких как Binance, ByBit, HTX, OKX и Kraken. Он использует API интерфейс и поддерживает множество бирж, позволяя трейдерам автоматизировать свои операции.</title>
+    <meta name="keywords" content="RevenueBot, криптовалютный торговый бот, торговый бот, автоматизированная торговля, торговля криптовалютой, автоматизация торговли, биткоин бот, торговля на криптовалютной бирже, автоматическая торговля на криптовалютной бирже, бот для торговли криптовалютой, бот для торговли на бирже, робот для торговли криптовалютой, автоматическая торговля криптовалютой, бот для бинанс, бот для Binance, бот для bitfinex, бот для bittrex, бот для poloniex, бот для exmo, бот для FTX, бот для hitbtc, бот для okx, бот для bitmax, бот для kraken, бот для kucoin, бот для binance futures, бот для bitget, бот для bitget futures, бот для gateio, бот для bybit, бот для bybit futures, бот для huobi">
+    <meta name="description" content="Интеллектуальная техническая платформа для автоматизированной торговли на криптовалютных биржах. Бот работает непрерывно, 24 часа в сутки, и базируется в облаке. Для автоматической торговли он использует API интерфейс и поддерживает все основные криптовалютные биржи: Binance, Bitfinex, Bittrex, Poloniex, Exmo, FTX, CEX.IO, HitBTC, OKX, BitMax, Kraken, KuCoin, Binance Futures, Bitget, Bitget Futures, Gate.io, Bybit, Bybit Futures и Huobi.">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@RevenueBot" />
+    <meta name="twitter:title" content="RevenueBOT – это умный автоматический бот для торговли на крупных криптовалютных биржах, таких как Binance, ByBit, HTX, OKX и Kraken. Он использует API интерфейс и поддерживает множество бирж, позволяя трейдерам автоматизировать свои операции" />
+    <meta name="twitter:description" content="Интеллектуальная техническая платформа для автоматизированной торговли на криптовалютных биржах. Бот работает непрерывно, 24 часа в сутки, и базируется в облаке. Для автоматической торговли он использует API интерфейс и поддерживает все основные криптовалютные биржи: Binance, Bitfinex, Bittrex, Poloniex, Exmo, FTX, CEX.IO, HitBTC, OKX, BitMax, Kraken, KuCoin, Binance Futures, Bitget, Bitget Futures, Gate.io, Bybit, Bybit Futures и Huobi." />
+    <meta name="twitter:image" content="https://revenuebot.io/rbl/images/logo-og.png" />
+    <meta name="twitter:image:src" content="https://revenuebot.io/rbl/images/logo-og.png" />
+    <meta property="og:image" content="https://revenuebot.io/rbl/images/logo-og.png" />
+    <meta property="og:url" content="https://revenuebot.io/ru/" />
+    <meta property="og:title" content="RevenueBOT – это умный автоматический бот для торговли на крупных криптовалютных биржах, таких как Binance, ByBit, HTX, OKX и Kraken. Он использует API интерфейс и поддерживает множество бирж, позволяя трейдерам автоматизировать свои операции" />
+    <meta property="og:description" content="Интеллектуальная техническая платформа для автоматизированной торговли на криптовалютных биржах. Бот работает непрерывно, 24 часа в сутки, и базируется в облаке. Для автоматической торговли он использует API интерфейс и поддерживает все основные криптовалютные биржи: Binance, Bitfinex, Bittrex, Poloniex, Exmo, FTX, CEX.IO, HitBTC, OKX, BitMax, Kraken, KuCoin, Binance Futures, Bitget, Bitget Futures, Gate.io, Bybit, Bybit Futures и Huobi." />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="T01">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <meta name="application-name" content="T01">
+    <link rel="canonical" href="https://revenuebot.io/ru/"/>
+    <link rel="alternate" hreflang="en" href="https://revenuebot.io/"/>
+    <link rel="alternate" hreflang="es" href="https://revenuebot.io/es/"/>
+    <link rel="alternate" hreflang="ru" href="https://revenuebot.io/ru/"/>
+    <!-- META TEGS END -->
+    <!-- STYLES START -->
+    <link rel="stylesheet" type="text/css" href="styles/button.css" />
+    <link rel="stylesheet" type="text/css" href="styles/globals.css" />
+    <link rel="stylesheet" type="text/css" href="styles/hero.css" />
+    <link rel="stylesheet" type="text/css" href="styles/launch.css" />
+    <link rel="stylesheet" type="text/css" href="styles/bonus.css" />
+    <link rel="stylesheet" type="text/css" href="styles/advantages.css" />
+    <link rel="stylesheet" type="text/css" href="styles/burse.css" />
+    <link rel="stylesheet" type="text/css" href="styles/possibilities.css" />
+    <link rel="stylesheet" type="text/css" href="styles/consultation.css" />
+    <link rel="stylesheet" type="text/css" href="styles/faq.css" />
+    <link rel="stylesheet" type="text/css" href="styles/contact.css" />
+    <!-- STYLES END -->
+  </head>
+  <body>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__text">
+          <img
+            src="./assets/hero__text-particle.svg"
+            class="hero__text-particle"
+          />
+          <h1>
+            Получайте прибыль от криптоторговли с умными ботами на платформе
+            RevenueBot.io
+          </h1>
+          <div class="hero__text-block">
+            <h2>
+              Начните зарабатывать уже сегодня с автоматизированными ботами
+            </h2>
+            <a href="https://revenuebot.io/ru/register.html" style="width: fit-content;">
+              <button class="button__default">Начать</button>
+            </a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="assets/hero__robo.png" alt="Крипторобот" />
+          <img
+            src="./assets/spring-particle.svg"
+            class="hero__image-particle"
+          />
+        </div>
+      </section>
+      <section class="launch">
+        <div class="launch__wrapper">
+          <img src="./assets/launch__wrapper-image-bg.svg" class="launch__wrapper-particle" />
+          <div class="launch__wrapper-image">
+            <img src="./assets/launch__wrapper-image.svg" alt="Первый робот" />
+          </div>
+          <div class="launch__main">
+            <img src="./assets/spring__colored-particle.svg" class="launch__main-particle" />
+            <h2>Запустите своего первого бота</h2>
+
+            <div class="launch__main-grid">
+              <div class="grid-item div1">
+                <img src="./assets/launch__grid-1.svg" />
+                <h3>Бесплатные примеры</h3>
+                <h4>
+                  Берите примеры готовых конфигураций с главной панели
+                  инструментов
+                </h4>
+              </div>
+              <div class="grid-item div2">
+                <img src="./assets/launch__grid-2.svg" />
+                <h3>Приобретайте обучение</h3>
+                <h4>
+                  Наши топ пользователи предоставляют услуги наставничества
+                </h4>
+              </div>
+              <div class="grid-item div3">
+                <img src="./assets/launch__grid-3.svg" />
+                <h3>Воспользуйтесь маркетплейсом</h3>
+                <h4>Где наши пользователи продают свои конфигурации ботов</h4>
+              </div>
+              <div class="grid-item div4">
+                <img src="./assets/launch__grid-4.svg" />
+                <h3>Вступайте в группу телеграм</h3>
+                <h4>
+                  Где пользователи помогают новичкам и делятся своими
+                  настройками
+                </h4>
+              </div>
+            </div>
+            <a href="https://revenuebot.io/ru/register.html">
+              <button class="button__default">Регистрация</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="bonus">
+        <div class="bonus__wrapper">
+            <img src="./assets/bonus-particle.svg" class="bonus-particle" />
+            <h2 class="bonus__title">
+            <span>Получите до 5 USDT</span><br />
+            за выполнение простых заданий
+          </h2>
+          <div class="bonus__row">
+            <div class="bonus__row-item">
+              <img src="./assets/bonus__row-item-telegram.svg" />
+              <p>
+                Подключайте Telegram к платформе и подписывайтесь на канал
+                “Cryptonews”
+              </p>
+            </div>
+            <div class="bonus__row-item">
+              <img src="./assets/bonus__row-item-chat.svg" />
+              <p>Присоединяйтесь к Telegram-чату наших пользователей</p>
+            </div>
+            <div class="bonus__row-item">
+              <img src="./assets/bonus__row-item-crypto.svg" />
+              <p>Присоединяйтесь к криптобирже</p>
+            </div>
+            <div class="bonus__row-item">
+              <img src="./assets/bonus__row-item-bot.svg" />
+              <p>Создайте своего первого бота</p>
+            </div>
+            <div class="bonus__row-item">
+              <img src="./assets/bonus__row-item-present.svg" />
+              <p>Получите свой бонус до 5 USDT</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <h2>Преимущества нашей платформы</h2>
+        <img src="./assets/square-particle.svg" class="advantages-particle" />
+        <div class="advantages__wrapper">
+          <div class="advantages__row">
+            <div class="advantages__row-item">
+              <img src="./assets/advantages__row-burse.svg" />
+              <p>Поддержка всех топовых бирж</p>
+              <button class="button__small-accent advantages__row-button">Начать</button>
+            </div>
+            <div class="advantages__row-item">
+              <img src="./assets/advantages__row-change.svg" />
+              <p>
+                Автоматическое переключение на самую активную торговую пару на
+                рынке
+              </p>
+              <button class="button__small advantages__row-button">Начать</button>
+            </div>
+            <div class="advantages__row-item">
+              <img src="./assets/advantages__row-system.svg" />
+              <p>
+                Понятный интерфейс для любого пользователя. Обширная база знаний
+                и бесплатные консультации.
+              </p>
+              <button class="button__small advantages__row-button">Начать</button>
+            </div>
+            <div class="advantages__row-item">
+              <img src="./assets/advantages__row-subscribe.svg" />
+              <p>
+                Подключение к биржам через FastAPI в несколько кликов. Возможно
+                подключение сигналов TradingView.
+              </p>
+              <button class="button__small advantages__row-button">Начать</button>
+            </div>
+            <div class="advantages__row-item">
+              <img src="./assets/advantages__row-union.svg" />
+              <p>
+                Marketplace, где можно выбрать и приобрести настроенных ботов от
+                других пользователей. Множество встроенных индикаторов.
+              </p>
+              <button class="button__small advantages__row-button">Начать</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="burses">
+        <div class="burse__row">
+          <a href="https://accounts.binance.com/en/register?ref=19351636">
+            <div class="burse__row-item">
+              <img src="./assets/burse-logo (1).svg" />
+            </div>
+          </a>
+          <a href="https://www.bybit.com/en/invite/?ref=MYJVQO">
+            <div class="burse__row-item">
+              <img src="./assets/burse-logo (2).svg" />
+            </div>
+          </a>
+          <a href="https://www.kucoin.com/">
+            <div class="burse__row-item">
+              <img src="./assets/burse-logo (3).svg" />
+            </div>
+          </a>
+          <a href="https://bingx.com/ru-ru/invite/IMSN2M/">
+            <div class="burse__row-item">
+              <img src="./assets/burse-logo (4).svg" />
+            </div>
+          </a>
+          <a href="https://www.gate.io/ru/signup?ref=11203828">
+            <div class="burse__row-item">
+              <img src="./assets/burse-logo (5).svg" />
+            </div>
+          </a>
+          <a href="https://www.okx.com/ru/join/35934140">
+            <div class="burse__row-item">
+              <img src="./assets/burse-logo (6).svg" />
+            </div>
+          </a>
+          <a href="https://www.kraken.com/">
+            <div class="burse__row-item">
+              <img src="./assets/burse-logo (7).svg" />
+            </div>
+          </a>
+        </div>
+        <div class="burse__buttons">
+          <div class="burse__buttons-prev"></div>
+          <div class="burse__buttons-next"></div>
+        </div>
+      </section>
+      <section class="possibilities">
+        <h2>Максимальные возможности для<br />
+          вашего успеха в криптоторговле
+        </h2>
+        <img
+          src="./assets/square-particle.svg"
+          class="possibilities-particle"
+        />
+        <img 
+            src="./assets/possibilities__particle-right.svg"
+            class="possibilities__particle-right"
+        />
+        <div class="possibilities__grid">
+          <div class="possibilities__grid-item div1">
+            <div class="possibilities__item-block">
+              <h3>01</h3>
+              <img
+                src="./assets/possibilities__image-marketplace.svg"
+                alt="Возможность"
+              />
+            </div>
+            <p><span>Подключите</span><br />до 100 ботов и до 10 бирж</p>
+          </div>
+          <div class="possibilities__grid-item div2">
+            <div class="possibilities__item-block">
+              <h3>02</h3>
+              <img
+                src="./assets/possibilities__image-money.svg"
+                alt="Возможность"
+              />
+            </div>
+            <p>
+              <span>Торгуйте </span><br />бесплатно до получения прибыли*</br>
+              *комиссия 20%, но максимум 50USDT
+            </p>
+          </div>
+          <div class="possibilities__grid-item div3">
+            <div class="possibilities__item-block">
+              <h3>03</h3>
+              <img
+                src="./assets/possibilities__image-bot.svg"
+                alt="Возможность"
+              />
+            </div>
+            <p>
+              <span>Симуляция работы бота</span><br />Backtest за последние 60
+              дней
+            </p>
+          </div>
+          <div class="possibilities__grid-item div4">
+            <div class="possibilities__item-block">
+              <h3>04</h3>
+              <img
+                src="./assets/possibilities__image-cashback.svg"
+                alt="Возможность"
+              />
+            </div>
+            <p>
+              <span>Реферальная программа</span><br />с выплатой 30% от комиссии
+              рефералов
+            </p>
+          </div>
+        </div>
+        <a href="https://revenuebot.io/ru/register.html" style="margin: 0 auto">
+          <button class="button__default">
+            Регистрация
+          </button>
+        </a>
+      </section>
+      <section class="consultation">
+        <img src="./assets/consultation-image.svg" class="consultation-image" alt="Консультация"/>
+        <img src="./assets/launch__wrapper-image-bg.svg" class="consultation__image-bg"/>
+        <img src="./assets/spring__colored-particle.svg" class="consultation__spring-particle"/>
+        <div class="consultation__main">
+            <h2>
+                Получите бесплатную<br /> 
+                консультацию
+            </h2>
+            <p>Запишитесь на бесплатную консультацию и узнайте,</br> 
+                как начать торговать с умными ботами.</p>
+            <a href="https://appt.link/consultation_from_support/revenuebot">
+              <button class="button__default">
+                Получить консультацию
+              </button>
+            </a>
+        </div>
+      </section>
+      <section class="faq">
+        <img src="./assets/spring-particle.svg" class="faq__spring-particle"/>
+        <img src="./assets/square-particle.svg" class="faq__square-particle"/>
+        <div class="faq__wrapper">
+            <h2>
+                FAQ
+            </h2>
+            <div class="faq__main">
+                <div class="faq__main-item">
+                    <p>
+                      1. Что такое RevenueBot? 
+                    </p>
+                    <!-- <p>
+                      RevenueBot - это инструмент для автоматизации торговли на криптовалютных биржах. Он позволяет пользователям создавать и настраивать торговые боты для выполнения сложных стратегий.
+                    </p> -->
+                    <img src="./assets/faq__arrow-down.svg" />
+                </div>
+                <div class="faq__main-item">
+                    <p>
+                      2. Как начать использовать RevenueBot? 
+                    </p>
+                    <!-- <p>
+                      Для начала использования RevenueBot вам нужно зарегистрироваться на сайте, подключить свой аккаунт на бирже и настроить своего первого бота.
+                    </p> -->
+                    <img src="./assets/faq__arrow-down.svg" />
+                </div>
+                <div class="faq__main-item">
+                    <p>
+                      3. Насколько безопасно использовать RevenueBot? 
+                    </p>
+                    <!-- <p>
+                      RevenueBot использует API-ключи для подключения к вашему аккаунту на бирже. Эти ключи не дают доступ к вашим средствам для вывода, что обеспечивает дополнительный уровень безопасности.
+                    </p> -->
+                    <img src="./assets/faq__arrow-down.svg" />
+                </div>
+                <div class="faq__main-item">
+                    <p>
+                      4. Какие биржи поддерживаются RevenueBot? 
+                    </p>
+                    <!-- <p>
+                      RevenueBot поддерживает множество популярных криптовалютных бирж, включая Binance, ByBit, OKX, HTX, Kraken и другие.
+                    </p> -->
+                    <img src="./assets/faq__arrow-down.svg" />
+                </div>
+                <div class="faq__main-item">
+                    <p>
+                      5. Сколько стоит использование RevenueBot?  
+                    </p>
+                    <!-- <p>
+                      Мы берем комиссию 20% только с дохода, который вы получаете при торговле ботом, но не больше чем 50 USD за календарный месяц за каждый вид торговли (На текущий момент представлено 3 вида торговли: SPOT, Futures USDS-M, Futures Coin-M). Отчетным является период с первого до последнего числа месяца.
+                    </p> -->
+                    <img src="./assets/faq__arrow-down.svg" />
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="contact">
+          <img src="./assets/bonus-particle.svg" class="contact__shape-particle" />
+          <div class="contact__main">
+              <h2>
+                  Остались вопросы?</br>
+                  <span>
+                    Напишите нам!
+                  </span>
+                </h2>
+                <p>Мы с вами свяжемся в ближайшее время.</p>
+                <a href="https://desk.revenuebot.io/ru/tickets/create/step1">
+                  <button class="button__default">
+                    Напишите нам
+                  </button>
+                </a>
+            </div>
+            <img src="./assets/contact-image.svg" class="contact-image" alt="Связаться с нами"/>
+            <img src="./assets/launch__wrapper-image-bg.svg" class="contact__image-bg"/>
+            <img 
+                src="./assets/possibilities__particle-right.svg"
+                class="contact__particle-right"
+            />
+      </section>
+    </main>
+  </body>
+</html>

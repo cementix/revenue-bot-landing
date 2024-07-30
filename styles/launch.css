@@ -1,0 +1,143 @@
+.launch {
+  background: #ffffff;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 20vh;
+}
+
+.launch__wrapper {
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+}
+
+.launch__wrapper-image {
+  position: relative;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.launch__wrapper-image img:first-child {
+  display: block;
+  z-index: 10;
+}
+
+.launch__wrapper-particle {
+  position: absolute;
+  pointer-events: none;
+  top: -30%;
+  left: 0%;
+
+  z-index: 0;
+}
+
+.launch__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+}
+
+.launch__main-particle {
+  position: absolute;
+  right: -2%;
+  top: 1%;
+}
+
+.launch__main h2 {
+  font-size: 3rem;
+  font-weight: 800;
+
+  font-family: "Proxima Nova", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 800 !important;
+  font-style: normal !important;
+}
+
+.launch__main-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 64px;
+  grid-row-gap: 96px;
+}
+
+.launch__main-grid .grid-item {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+}
+
+.launch__main-grid .grid-item img {
+  height: 100px;
+  width: 100px;
+}
+
+.launch__main-grid .grid-item h3 {
+  font-size: 1.5rem;
+
+  font-family: "Proxima Nova", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 800 !important;
+  font-style: normal !important;
+}
+
+.launch__main-grid .grid-item h4 {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.launch__main-grid .div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.launch__main-grid .div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.launch__main-grid .div3 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.launch__main-grid .div4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+@media (max-width: 1024px) {
+  .launch__main h2 {
+    z-index: 2;
+  }
+  .launch__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .launch__wrapper-particle {
+    top: 40%;
+    left: auto;
+    right: -40%;
+  }
+  .launch__main-particle {
+    z-index: 0;
+    right: -10%;
+    top: 10%;
+  }
+  .launch__main-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+  }
+}

@@ -1,0 +1,55 @@
+.burse {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.burse__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8px;
+  width: 100%;
+  padding: 10px;
+  max-width: 100vw;
+  overflow-x: auto;
+}
+
+.burse__row-item {
+  width: fit-content;
+  height: 100%;
+}
+
+.burse__buttons-prev,
+.burse__buttons-next {
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.burse__buttons-prev {
+  background: url("../assets/possibilities__button-filled.svg");
+}
+.burse__buttons-next {
+  background: url("../assets/possibilities__button-unfilled.svg");
+}
+
+.burse__buttons {
+  margin: 10px auto;
+  gap: 8px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .burse__buttons {
+    display: none;
+  }
+}

@@ -1,0 +1,118 @@
+.contact {
+  min-height: 60vh;
+  width: 100%;
+  margin-top: 160px;
+  display: flex;
+  position: relative;
+  align-items: start;
+  justify-content: center;
+  gap: 10%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.contact-image {
+  z-index: 1;
+}
+.contact__image-bg {
+  position: absolute;
+  top: -20%;
+  right: 10%;
+  z-index: 0;
+}
+
+.contact__shape-particle {
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  z-index: 0;
+}
+
+.contact__particle-right {
+  position: absolute;
+  right: 8%;
+  top: 70%;
+}
+
+.contact__main {
+  padding: 80px 0px;
+  z-index: 2;
+}
+
+.contact__main h2 {
+  font-size: 3rem;
+
+  font-family: "Proxima Nova", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 800 !important;
+  font-style: normal !important;
+}
+
+.contact__main p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+@media (max-width: 468px) {
+  .contact__main h2 {
+    font-size: 2rem !important;
+    white-space: nowrap;
+  }
+  .contact__main span {
+    font-size: 1.5rem !important;
+  }
+  .contact__main {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+  .contact-image {
+    display: block;
+    height: 400px;
+    width: 300px;
+  }
+  .contact__main {
+    padding: 0px 10px;
+  }
+  .contact__main h2 {
+    font-size: 2rem !important;
+    white-space: nowrap;
+  }
+  .contact__main span {
+    font-size: 1.75rem !important;
+  }
+  .contact__image-bg {
+    display: none;
+  }
+  .contact__shape-particle {
+    left: -30%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .contact__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contact__particle-right {
+    top: 90%;
+  }
+}

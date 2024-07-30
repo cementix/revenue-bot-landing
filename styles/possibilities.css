@@ -1,0 +1,131 @@
+.possibilities {
+  min-height: 70vh;
+  margin: 80px 0px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 80px;
+
+  background: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.possibilities h2 {
+  margin-left: 15%;
+  font-size: 3rem;
+  z-index: 1;
+
+  font-family: "Proxima Nova", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 800 !important;
+  font-style: normal !important;
+}
+
+.possibilities-particle {
+  position: absolute;
+  transform: rotate(90deg);
+  z-index: 0;
+  top: 12%;
+  left: 8%;
+}
+
+.possibilities__particle-right {
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+
+.possibilities__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.possibilities__grid-item span {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2b289c;
+}
+
+.possibilities__grid-item p {
+  font-size: 1rem;
+  color: #231f20;
+
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.possibilities__item-block {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2px;
+
+  margin-bottom: 15px;
+}
+
+.possibilities__item-block img {
+  height: 80px;
+  width: 80px;
+}
+
+.possibilities__item-block h3 {
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
+.possibilities__grid .div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.possibilities__grid .div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.possibilities__grid .div3 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.possibilities__grid .div4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+@media (max-width: 468px) {
+  .possibilities__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0 20px;
+  }
+  .possibilities h2 {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .possibilities__item-block h3 {
+    font-size: 3.5rem;
+  }
+  .possibilities__grid-item p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  .possibilities-particle {
+    display: none;
+  }
+  .possibilities__particle-right {
+    display: none;
+  }
+}

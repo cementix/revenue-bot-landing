@@ -1,0 +1,80 @@
+.button__default {
+  background-color: #2b289c;
+  color: #ffffff;
+  padding: 16px 40px;
+  text-transform: uppercase;
+  border-radius: 16px;
+  cursor: pointer;
+  transition-duration: 300ms;
+  font-size: 1.5rem;
+  z-index: 9999;
+
+  font-family: "Proxima Nova", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 800 !important;
+  font-style: normal !important;
+}
+
+.button__default:hover {
+  background-color: #2463eb;
+}
+
+.button__default:active {
+  background-color: #4b47c6;
+}
+
+.button__small {
+  background-color: transparent;
+  border: 2px solid #2b289c;
+  color: #2b289c;
+  padding: 16px 40px;
+  text-transform: uppercase;
+  border-radius: 16px;
+  cursor: pointer;
+  transition-duration: 300ms;
+  font-size: 1.5rem;
+
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+}
+
+.button__small:hover {
+  border-color: #2463eb;
+  color: #2463eb;
+}
+
+.button__small:active {
+  background-color: #4b47c6;
+  border-color: #4b47c6;
+  color: #ffffff;
+}
+
+.button__small-accent {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 16px 40px;
+  text-transform: uppercase;
+  border-radius: 16px;
+  cursor: pointer;
+  transition-duration: 300ms;
+  font-size: 1.5rem;
+
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+}
+
+.button__small-accent:hover {
+  border-color: #d8e4ff;
+  color: #d8e4ff;
+}
+
+.button__small-accent:active {
+  background-color: #d8e4ff;
+  border-color: #d8e4ff;
+  color: #ffffff;
+}
